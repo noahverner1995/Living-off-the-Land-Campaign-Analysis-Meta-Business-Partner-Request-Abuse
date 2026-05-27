@@ -131,7 +131,11 @@ is not part of or affiliated with Meta. Only approve requests and invitations
 from people and businesses you know and trust...
 ```
 
-![DevTools mostrando las 4 ocurrencias del enlace m.me en el DOM / DevTools showing 4 occurrences of the m.me link in the DOM](screenshots/03_devtools_mme.png)
+<div align="center">
+  <img src="screenshots/03_devtools_mme.png" 
+       alt="DevTools mostrando las 4 ocurrencias del enlace m.me en el DOM / DevTools showing 4 occurrences of the m.me link in the DOM" 
+       width="70%">
+</div>
 
 #### 3.2 Botón "View request" / "View request" button
 
@@ -150,7 +154,11 @@ from people and businesses you know and trust...
 
 **EN:** The real URL is `https://business.facebook.com/settings/partners/980425691238214/?business_id=2836451836418284` — a genuine Meta URL that opens the attacker's real partner request.
 
-![DevTools mostrando el atributo originalsrc del botón View request / DevTools showing originalsrc attribute of the View request button](screenshots/04_devtools_viewrequest.png)
+<div align="center">
+  <img src="screenshots/04_devtools_viewrequest.png" 
+       alt="DevTools mostrando el atributo originalsrc del botón View request / DevTools showing originalsrc attribute of the View request button" 
+       width="70%">
+</div>
 
 #### 3.3 Elementos "facebook.com" y "support link above" / "facebook.com" and "support link above" elements
 
