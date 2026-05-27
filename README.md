@@ -78,7 +78,11 @@ This section describes the forensic process step by step, reproducible by any an
 
 **EN:** In Outlook web, the complete message source (MIME headers + body) is obtained from the three-dot menu (`...` → `View` → `View message source`). This exposes the raw headers normally hidden by mail clients, including authentication results, the `Received:` chain, and the DKIM signature. The resulting content is the sample's `.eml` file.
 
-![Menú "Ver origen del mensaje" en Outlook web / Outlook web "View message source" menu](screenshots/01_view_source_outlook.png)
+<div align="center">
+  <img src="screenshots/01_view_source_outlook.png" 
+       alt="Menú 'Ver origen del mensaje' en Outlook web / Outlook web 'View message source' menu" 
+       width="100%">
+</div>
 
 ---
 
@@ -99,7 +103,11 @@ Authentication-Results:
   compauth=pass reason=100
 ```
 
-![Cabeceras de autenticación en el origen del mensaje / Authentication headers in the message source](screenshots/02_auth_headers.png)
+<div align="center">
+  <img src="screenshots/02_auth_headers.png" 
+       alt="Cabeceras de autenticación en el origen del mensaje / Authentication headers in the message source" 
+       width="70%">
+</div>
 
 ---
 
