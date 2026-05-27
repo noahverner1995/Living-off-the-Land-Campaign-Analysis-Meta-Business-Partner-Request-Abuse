@@ -1,6 +1,8 @@
 # Análisis de campaña: abuso del sistema de partner requests de Meta Business
 # Campaign Analysis: Meta Business Partner Request Abuse
 
+![Contenido del mensaje / Message format](screenshots/00_email_content.png)
+
 **Autor / Author:** Luis Ernesto P. CH. — Blue Team Specialist · ISO 27001 Internal Auditor  
 **Fecha / Date:** 2026-05-26  
 **TLP:** WHITE — Distribución pública / Public distribution  
@@ -513,7 +515,7 @@ meta-business-partner-phishing-2026/
 │   ├── meta_partner_request_REDACTED.eml        ← Muestra de correo (PII redactada)
 │   └── evidence_hashes.txt                      ← SHA-256 / MD5 de la muestra
 └── screenshots/
-    ├── 00_email_content.png                     ← Menú "Ver origen del mensaje"
+    ├── 00_email_content.png                     ← Contenido del mensaje
     ├── 01_view_source_outlook.png               ← Menú "Ver origen del mensaje"
     ├── 02_auth_headers.png                      ← Cabeceras de autenticación
     ├── 03_devtools_mme.png                      ← DevTools: enlace m.me en DOM
@@ -525,7 +527,7 @@ meta-business-partner-phishing-2026/
     ├── 09_bgp_he_net_info.png                   ← bgp.he.net IPv6 Network Info
     ├── 10_bgp_he_net_whois.png                  ← bgp.he.net WHOIS (Facebook Network)
     ├── 11_vm_navigation.png                     ← VM navegando a facebook.com/670...
-    └── 12_facebook_page_lure.png               ← Página "Partner Program Platform"
+    └── 12_facebook_page_lure.png                ← Página "Partner Program Platform"
 ```
 
 ---
