@@ -1,7 +1,15 @@
-# Análisis de campaña: abuso del sistema de partner requests de Meta Business
+# Análisis de Campaña: Abuso del Sistema de Partner Requests de Meta Business
 # Campaign Analysis: Meta Business Partner Request Abuse
 
-![Contenido del mensaje / Message format](screenshots/00_email_content.png)
+<div align="center">
+  <img src="screenshots/00_email_content.png" 
+       alt="Contenido del mensaje / Message format" 
+       width="50%">
+  <br>
+<i>Vista del mensaje desde la víctima / Victim's message view</i>
+</div>
+
+<br>
 
 **Autor / Author:** Luis Ernesto P. CH. — Blue Team Specialist · ISO 27001 Internal Auditor  
 **Fecha / Date:** 2026-05-26  
