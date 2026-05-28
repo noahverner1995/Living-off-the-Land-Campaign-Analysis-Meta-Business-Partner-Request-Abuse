@@ -198,12 +198,6 @@ from people and businesses you know and trust...
        width="90%">
 </div>
 
-<div align="center">
-  <img src="screenshots/06_urlscan_mme_asn.png" 
-       alt="urlscan.io tabla de IPs mostrando 100% ASN 32934 FACEBOOK / urlscan.io IP table showing 100% ASN 32934 FACEBOOK" 
-       width="90%">
-</div>
-
 **VirusTotal** — Resultado: https://www.virustotal.com/gui/url/307bc09ea9934d90eea305f63d0d534c26b672a911f8393d5b495a1b673d4184
 
 **ES:** 1 de ~90 proveedores de seguridad marcó la URL como maliciosa. Esta es una señal débil y no es indicador de maliciosidad real de la URL. `m.me` es un dominio de acortamiento de Messenger compartido por cientos de millones de URLs, algunas de las cuales son maliciosas por su contenido, no por el dominio. El dominio en sí es legítimo de Meta.
@@ -325,7 +319,11 @@ DKIM-Signature: v=1; a=rsa-sha256;
   PTR: xx-fbcdn-shv-01-fra3.fbcdn.net
 ```
 
-![urlscan.io confirmando ASN 32934 = FACEBOOK - Facebook, Inc., US / urlscan.io confirming ASN 32934 = FACEBOOK - Facebook, Inc., US](screenshots/07_urlscan_mme_asn.png)
+<div align="center">
+  <img src="screenshots/06_urlscan_mme_asn.png" 
+       alt="urlscan.io tabla de IPs mostrando 100% ASN 32934 FACEBOOK / urlscan.io IP table showing 100% ASN 32934 FACEBOOK" 
+       width="90%">
+</div>
 
 **b) bgp.he.net (Hurricane Electric)**:
 
@@ -347,9 +345,17 @@ country:    US
 
 **EN:** `Edge Network Services Ltd` is the legal entity with which Meta registers its IP blocks in LACNIC. The contact `noc@fb.com` and address `Hacker Way, 1, Menlo Park, CA` are unambiguously Meta's.
 
-![bgp.he.net Network Info mostrando 2803:6086::/32 asignado a LACNIC / bgp.he.net Network Info showing 2803:6086::/32 assigned in LACNIC](screenshots/09_bgp_he_net_info.png)
+<div align="center">
+  <img src="screenshots/09_bgp_he_net_info.png" 
+       alt="bgp.he.net Network Info mostrando 2803:6086::/32 asignado a LACNIC / bgp.he.net Network Info showing 2803:6086::/32 assigned in LACNIC" 
+       width="90%">
+</div>
 
-![bgp.he.net WHOIS mostrando owner Edge Network Services Ltd, noc@fb.com, Hacker Way / bgp.he.net WHOIS showing owner Edge Network Services Ltd, noc@fb.com, Hacker Way](screenshots/10_bgp_he_net_whois.png)
+<div align="center">
+  <img src="screenshots/10_bgp_he_net_whois.png" 
+       alt="bgp.he.net WHOIS mostrando owner Edge Network Services Ltd, noc@fb.com, Hacker Way / bgp.he.net WHOIS showing owner Edge Network Services Ltd, noc@fb.com, Hacker Way" 
+       width="90%">
+</div>
 
 > **Conclusión / Conclusion:**
 > 
@@ -365,9 +371,17 @@ country:    US
 
 **EN:** To identify the page linked to `m.me/670065706200806` without exposing the real Facebook session, an isolated VM was used (VirtualBox, Ubuntu, Firefox without active session). Navigating to `https://www.facebook.com/670065706200806` redirected to `https://www.facebook.com/people/Partner-Program-Platform/61578819584100/`.
 
-![VM aislada navegando a www.facebook.com/670065706200806 / Isolated VM navigating to www.facebook.com/670065706200806](screenshots/11_vm_navigation.png)
+<div align="center">
+  <img src="screenshots/11_vm_navigation.png" 
+       alt="VM aislada navegando a www.facebook.com/670065706200806 / Isolated VM navigating to www.facebook.com/670065706200806" 
+       width="90%">
+</div>
 
-![Página "Partner Program Platform" mostrando badge azul falso, "Meta Bussines", y 14 seguidores / "Partner Program Platform" page showing fake blue badge, "Meta Bussines" typo, and 14 followers](screenshots/12_facebook_page_lure.png)
+<div align="center">
+  <img src="screenshots/12_facebook_page_lure.png" 
+       alt="Página 'Partner Program Platform' mostrando badge azul falso, 'Meta Bussines', y 14 seguidores / 'Partner Program Platform' page showing fake blue badge, 'Meta Bussines' typo, and 14 followers" 
+       width="90%">
+</div>
 
 **Hallazgos en la página / Page findings:**
 
