@@ -226,7 +226,17 @@ threatYeti califica `m.me` como "2.45 — bajo riesgo". Esto es esperado porque 
 
 threatYeti rates `m.me` as "2.45 — low risk." This is expected because `m.me` is a legitimate Meta domain with high reputation. The low risk rating confirms that maliciousness does not reside in the infrastructure but in the email's semantic content.
 
-![URLhaus búsqueda mostrando etiquetas ClearFake (falso positivo de subcadena) / URLhaus search showing ClearFake tags (substring false positive)](screenshots/08_urlhaus_noise.png)
+<div align="center">
+  <img src="screenshots/08_urlhaus_noise.png" 
+       alt="URLhaus búsqueda mostrando etiquetas ClearFake (falso positivo de subcadena) / URLhaus search showing ClearFake tags (substring false positive)" 
+       width="90%">
+</div>
+
+<div align="center">
+  <img src="screenshots/08_threatyeti_kpi.png" 
+       alt="threatYeti calificación del sitio 'm.me' como aparente bajo riesgo / threatYeti rating of the site 'm.me' as apparently low risk" 
+       width="90%">
+</div>
 
 #### 4.2 Análisis de la URL del botón "View request" (SafeLinks)
 
@@ -618,6 +628,7 @@ meta-business-partner-phishing-2026/
     ├── 06_urlscan_mme_asn.png                   ← urlscan.io tabla de IPs / ASN
     ├── 07_virustotal_mme.png                    ← VirusTotal resultado m.me
     ├── 08_urlhaus_noise.png                     ← URLhaus (falso positivo ClearFake)
+    ├── 08_threatyeti_kpi.png                    ← threatYeti (Calificación de aparente bajo riesgo)
     ├── 09_bgp_he_net_info.png                   ← bgp.he.net IPv6 Network Info
     ├── 10_bgp_he_net_whois.png                  ← bgp.he.net WHOIS (Facebook Network)
     ├── 11_vm_navigation.png                     ← VM navegando a facebook.com/670...
