@@ -201,7 +201,7 @@ from people and businesses you know and trust...
 <div align="center">
   <img src="screenshots/06_urlscan_mme_asn.png" 
        alt="urlscan.io tabla de IPs mostrando 100% ASN 32934 FACEBOOK / urlscan.io IP table showing 100% ASN 32934 FACEBOOK" 
-       width="70%">
+       width="90%">
 </div>
 
 **VirusTotal** — Resultado: https://www.virustotal.com/gui/url/307bc09ea9934d90eea305f63d0d534c26b672a911f8393d5b495a1b673d4184
