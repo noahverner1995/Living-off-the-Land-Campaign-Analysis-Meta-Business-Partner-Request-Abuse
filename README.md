@@ -192,9 +192,17 @@ from people and businesses you know and trust...
 
 **EN:** The "German IPs" mentioned are Meta edge nodes in Frankfurt (fra3 = Frankfurt datacenter 3), completely normal. urlscan.io ran from a server in Germany (`Scanned from DE`), and the scan was submitted from Colombia (`from CO`), which explains why it resolved to the nearest European PoP. They have no relation to the attacker.
 
-![urlscan.io resultado completo para m.me/670065706200806 mostrando ASN 32934 en todas las IPs / urlscan.io full result for m.me/670065706200806 showing ASN 32934 on all IPs](screenshots/05_urlscan_mme_result.png)
+<div align="center">
+  <img src="screenshots/05_urlscan_mme_result.png" 
+       alt="urlscan.io resultado completo para m.me/670065706200806 mostrando ASN 32934 en todas las IPs / urlscan.io full result for m.me/670065706200806 showing ASN 32934 on all IPs" 
+       width="90%">
+</div>
 
-![urlscan.io tabla de IPs mostrando 100% ASN 32934 FACEBOOK / urlscan.io IP table showing 100% ASN 32934 FACEBOOK](screenshots/06_urlscan_mme_asn.png)
+<div align="center">
+  <img src="screenshots/06_urlscan_mme_asn.png" 
+       alt="urlscan.io tabla de IPs mostrando 100% ASN 32934 FACEBOOK / urlscan.io IP table showing 100% ASN 32934 FACEBOOK" 
+       width="70%">
+</div>
 
 **VirusTotal** — Resultado: https://www.virustotal.com/gui/url/307bc09ea9934d90eea305f63d0d534c26b672a911f8393d5b495a1b673d4184
 
