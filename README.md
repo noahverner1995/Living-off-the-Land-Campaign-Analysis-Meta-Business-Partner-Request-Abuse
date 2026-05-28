@@ -210,7 +210,11 @@ from people and businesses you know and trust...
 
 **EN:** 1 out of ~90 security vendors flagged the URL as malicious. This is a weak signal and not an indicator of real URL maliciousness. `m.me` is a Messenger shortener domain shared by hundreds of millions of URLs, some of which are malicious by their content, not by the domain itself. The domain itself is legitimate Meta infrastructure.
 
-![VirusTotal resultado para m.me/670065706200806 mostrando 1/~90 detecciones / VirusTotal result for m.me/670065706200806 showing 1/~90 detections](screenshots/07_virustotal_mme.png)
+<div align="center">
+  <img src="screenshots/07_virustotal_mme.png" 
+       alt="VirusTotal resultado para m.me/670065706200806 mostrando 1/~90 detecciones / VirusTotal result for m.me/670065706200806 showing 1/~90 detections" 
+       width="90%">
+</div>
 
 **URLhaus** y **threatYeti** / URLhaus and threatYeti
 
