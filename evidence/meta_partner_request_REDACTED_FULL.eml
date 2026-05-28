@@ -1,0 +1,404 @@
+Received: from [REDACTED_OUTLOOK_SERVER]
+ ([REDACTED_MS_IPV6]) by [REDACTED_OUTLOOK_SERVER] with
+ HTTPS; Mon, 25 May 2026 14:57:23 +0000
+Received: from [REDACTED_OUTLOOK_SERVER] ([REDACTED_MS_IPV6])
+ by [REDACTED_OUTLOOK_SERVER] ([REDACTED_MS_IPV6]) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.71.11; Mon, 25 May
+ 2026 14:57:21 +0000
+Received: from [REDACTED_OUTLOOK_SERVER]
+ ([REDACTED_MS_IPV6]) by [REDACTED_OUTLOOK_SERVER]
+ ([REDACTED_MS_IPV6]) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.48.20 via Frontend Transport; Mon, 25
+ May 2026 14:57:21 +0000
+Authentication-Results: spf=pass (sender IP is 69.171.232.142)
+ smtp.mailfrom=business.facebook.com; dkim=pass (signature was verified)
+ header.d=business.facebook.com;dmarc=pass action=none
+ header.from=business.facebook.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of business.facebook.com
+ designates 69.171.232.142 as permitted sender)
+ receiver=protection.outlook.com; client-ip=69.171.232.142;
+ helo=69-171-232-142.mail-mail.facebook.com; pr=C
+Received: from 69-171-232-142.mail-mail.facebook.com (69.171.232.142) by
+ [REDACTED_OUTLOOK_SERVER] ([REDACTED_MS_INTERNAL_IP]) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.71.7 via
+ Frontend Transport; Mon, 25 May 2026 14:57:20 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:AD367F34B53E377463497014054B9A2B48559E8BCE92027DC0E17891AE318BD7;UpperCasedChecksum:E95CACF78A466F6F79B59FE3EA872CDB9DFB22F1299140C552A044FC12907049;SizeAsReceived:1679;Count:21
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+	d=business.facebook.com; s=s2048-2024-q1; t=1779721040;
+	bh=JqMg+ThLCPETk1zI/7wjwDh3FvU2rq9b2Hvwi3xNvjE=;
+	h=Date:To:Subject:From:MIME-Version:Content-Type;
+	b=mHe323VxeBz34q2QadDjJmN6faFEb3K8kQJb3l3rKJlERG6wF592IMkhW0EWv+VBP
+	 4IIMC57nZmKM5Vf4jzoYD7vkesgxpocjexQi/56HyCCqq+2hxEcMtSxLI8PgNnxCyR
+	 V4BYzt+UkzG06rFJeldx8o5ENgn/H44CvI1BwO86Gh0FD2optMXvp5xde2IrgP/nsa
+	 kjK1vVAF60m3080Uf1N0Y0YaZl6CgHdVCpdnizgdhuq3gQ+bbqywXzgPDCT/f8IdBa
+	 xArxIYNZPzfi1qoW68+BXRkNWhB83szkX1E09xlVAQXHFt8cEWeR6Q711t0RHPprvi
+	 JjJQKzi7C9yaw==
+X-Facebook: from 2803:6086:3013:222:21ea:8601:15c8:a00 ([MTI3LjAuMC4x]) 
+	by business.facebook.com with HTTPS (ZuckMail);
+Date: Mon, 25 May 2026 07:41:56 -0700
+To: [REDACTED_RECIPIENT]
+Subject: You've received a Business Manager partner request
+X-Mailer: ZuckMail [version 1.00]
+Return-Path: noreply@business.facebook.com
+From: "Facebook" <noreply@business.facebook.com>
+Reply-To: noreply <noreply@facebookmail.com>
+Errors-To: noreply@business.facebook.com
+X-Facebook-Notify: business_manager_partner_request_unreg; mailid=[REDACTED_MAILID]
+X-FB-Internal-Notiftype: business_manager_partner_request_unreg
+BIMI-Selector: v=BIMI1; s=default;
+Feedback-ID: business_manager_partner_request_unreg:Facebook
+X-FB-Internal-MID: [REDACTED_MAILID]
+X-FACEBOOK-PRIORITY: 0
+X-Auto-Response-Suppress: All
+Content-Type: multipart/alternative;
+	boundary="b1_e4c5767f2d7caf888c9f2fecbbf12b43"
+Message-ID: <d5c4c4f1-6248-45a8-be7d-93ba0279c187@business.facebook.com>
+X-IncomingHeaderCount: 21
+X-MS-Exchange-Organization-ExpirationStartTime: 25 May 2026 14:57:21.2396
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: [REDACTED_MSG_GUID]
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: [REDACTED_TENANT_ID]:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: [REDACTED_OUTLOOK_SERVER_CHAIN]
+X-MS-Exchange-Organization-AuthSource: [REDACTED_OUTLOOK_SERVER]
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-UserLastLogonTime: [REDACTED]
+X-MS-Office365-Filtering-Correlation-Id: [REDACTED_MSG_GUID]
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 69.171.232.142
+X-SID-PRA: NOREPLY@BUSINESS.FACEBOOK.COM
+X-SID-Result: PASS
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;ARA:1444111002|20103052903057|20103052901057|3600799018|68400799013|100100799003|970799063|34130799006|1680799066|5139299004|10300799038|1290799033|9400799043|3151999006|9000799056|8900799020|3069299007|20103052904057|20103052914048|56899033|1380799030|1360799030|1370799030|1602099012|4302099013|3412199025|8011999015|440099028|18021999003|30041999003;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 25 May 2026 14:57:20.9413
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: [REDACTED_MSG_GUID]
+X-MS-Exchange-CrossTenant-Id: [REDACTED_TENANT_ID]
+X-MS-Exchange-CrossTenant-AuthSource: [REDACTED_OUTLOOK_SERVER]
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: [REDACTED_OUTLOOK_SERVER]
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.4148411
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0071.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000311)(920221119095)(920221120095)(90000117)(90005022)(91005020)(91035115)(9050020)(9100341)(944500132)(4810010)(4910033)(9910022)(9610028)(9510006)(10110021)(9320005)(120001)(1110175);
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0xO1NDTD0tMQ==
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?MXBfM9Gmo0NMhFyI0thRySRv171cqxtaRmrant3a1T4cH1q1oTmIRkE9f8WG?=
+ =?us-ascii?Q?YKa00juThO2mi3qBvvkmnRfuxE8elgJQOhTwjdrY1LAnPy9UpKnHL80iEBYE?=
+ =?us-ascii?Q?lDi8VDvhZ3mO9AgVsD00NdR1NDaCoNuK8PHYH5gmzAm3n7Bggo6IxnaJpq/x?=
+ =?us-ascii?Q?esdGbgp2JbwLyb+yxKL7vzcg8dN9JqYmZGuetm+MlQ0jvCnIVoAPTbC4jnmD?=
+ =?us-ascii?Q?VgqP+78M8NZAHKasNN/nS8WXSKCHVedqQ7q7wyiCvM4XV7phXzPM4p74iaq9?=
+ =?us-ascii?Q?pa+pPBpXvwtF3gev/O+fZzDYF5gFJWXd3k/ZBmjWlD19kW90sRz0HhMuZ6g+?=
+ =?us-ascii?Q?2/v3YKH6ojBo5QM2kLCd2Jm8sHT+T+haogUJnszhdsJY0T93/NdvgGrPDGFq?=
+ =?us-ascii?Q?sbaxki7/dYZur7J5BFTYnTQ/rRl9Y6oGi5DiOUEA2NLoEuGVQA3gbcONmMYt?=
+ =?us-ascii?Q?fFyOdAAT00zIT6lQzKAUywHIiPyoO500F9JA7XmpT4qnac/x/E7ZYPz6R0Sp?=
+ =?us-ascii?Q?KC50rYylHKnzj/6Ys7T3QHyCQh3l2XMX/XEsDncvAlrFmF95hRGXsxB/Crnc?=
+ =?us-ascii?Q?xzy638i2812nxGQOTJXvfZmF3K3B0RaEsW6txqBAXw8GDRPJG+OqUF5zAUfe?=
+ =?us-ascii?Q?STTHJiOYB5Yi1vojmDWDMIkw4Sd0FJl7BK50sgQw9fi6xYSkVPp0Taw7maow?=
+ =?us-ascii?Q?SVBhva9WJiahBA1Lux7qaGWApHY7YopyQjBTpm7Q9UkJ4Fwh1gxyZlQnspSv?=
+ =?us-ascii?Q?godEgzzW+pA3ybcQQALbXs+etzhrQeXbuCGMTeRDlGIj4VIPE3jLRDEyaTRo?=
+ =?us-ascii?Q?YaPv9BlVHxb/tIN4ge86uR8JiHUY8De+9wH7SV/o+5JBtxm4jWJWBwp0gxCV?=
+ =?us-ascii?Q?RHmAbomUaJPV+0ijr5UV93b7PDQQBebeC/NdxXfOIWS3gePW3k+qze7DHUVl?=
+ =?us-ascii?Q?57LafuQWYaBFL2TN5l7W6mdaDrii61JBAigrzLcoagj4jiinLg6Uy9S/JCwI?=
+ =?us-ascii?Q?sHLE7EyR8GrMgsS9DaNt0V0amHgp38Dfovgys6g2XRhvwxvbZ+lOYJmds6sa?=
+ =?us-ascii?Q?nmeqtu/61kvfrNG54DHmyAj/pO5U09JWY4YDepf7tlxAThuLHi/C6dcn1A5e?=
+ =?us-ascii?Q?34TXjyAQPPDzy+4QRThvPvGFriuPpu34iNL4li/MlIoZpTnobZLT2ZHD+Em/?=
+ =?us-ascii?Q?Ktrd5QHq58d+E89dUcBGP8+M1qGQc93rIO2D7K1Db9a8YXGdbzFNpOf/LbSH?=
+ =?us-ascii?Q?fZOvJ7qEvKDLKX/1ZeIZeAuZhsOgzK9TBfZaS/ilafUqKBtiTBDzKckHqzfS?=
+ =?us-ascii?Q?MLznXWk4LFWw1iCly9E0AElOC6eS5ASSlSZqih1F4TWl4Rk7PQLkisSOmUNd?=
+ =?us-ascii?Q?As+R6qSdJTlYaAFEm8QZzz635TGhpmgU+2q+FOY0hbD6ntPqEU2Ahtyv1iTl?=
+ =?us-ascii?Q?skSrRYYr0TmGOxIijbU03Zsi3L7UTOWKvzgGr8xQhd85MD4uQflpEv6t5uYW?=
+ =?us-ascii?Q?ZvaBmXAkRp9BjsFVziuF1b+Z3f+UoBGjs8ia0h13zwWhaLu9HDWikg0BdjMR?=
+ =?us-ascii?Q?oO8Y7XvFUCUNHorEFW8XLLFCV4Crw8E9B8UmH9Jsii2x+ZLlx0EKPwzCKUKk?=
+ =?us-ascii?Q?8a/C0zdBUA0PgyJK/lbUH4WjSV9LW/VjTPLJmx6s9u+2oqtESnGXy7uy6Obw?=
+ =?us-ascii?Q?rAh/M+wZFWIwPjsjGEcN0b9uFht5EHE9i35i/3XNZWkOWzNj3BLhzYC4dweu?=
+ =?us-ascii?Q?cz3om6nVlumO8IvwYYsgwszXB4jlA6JP0zfKEkYbuIIa3xN8dMYVyI8sqi+O?=
+ =?us-ascii?Q?wuxF62uFKc1XHVQ+5+ji4Lpp0m72Txh9b16Xk0J86FvUuMCJ6PGt57Yu064j?=
+ =?us-ascii?Q?rzsKG+lUYD1ze/GG0vaCQBiI2ClOgqo5JFBXuj/CGrazESukhIpDNThgupXx?=
+ =?us-ascii?Q?gA2i4KHtqVOmDLlt9b1Va6n/yNTTF17tJHTrpTk1Bh8mxVRmUVJQW0slGgHn?=
+ =?us-ascii?Q?6NlqWbGzHln1vv9fK/aYsbv6gy+p/GRZIUAmBP940NGlksuUb+mHj2bnRDHM?=
+ =?us-ascii?Q?colwT27o4B4nK530G9FH6Os0G9yNoy+0SQF4BXPtsUyFJAbIF8eHEAwM4BDT?=
+ =?us-ascii?Q?3vkRtNJqIihZzgfGa7DzSOOCo21YcgXc73LMElTBAYMHkQ3PMV0p3RP1D8OB?=
+ =?us-ascii?Q?nd0LIToc6FDpCbLtrFLnwFk56GM/m2mmrXkLN2WNlW4EoUaN0nZOpEST8nh9?=
+ =?us-ascii?Q?MaIr4jPTKyVaxfafbpa+9Crt7hRFnZmAB9V7pJj+UqXtwq6O5DJUoHvYMuJ8?=
+ =?us-ascii?Q?MKCYSSWrcdNp5PGH08LB0EAlevgLhpU5i9wmYWyO/Z/g2qZi7sv8bDZNw9c/?=
+ =?us-ascii?Q?TF2sNxvL24oU0VK/VKWPZEZlc65itdyTjgOQQTFtY0dwb/VDk3zF7yShu1eT?=
+ =?us-ascii?Q?muLdzEk0kyEYsMPMt+TyUKU76UFqQkiUnN+wd1Hfc8Hs9hASiaCbIdHK+zmc?=
+ =?us-ascii?Q?3nznFm9jBEgfT/eqrgxmk8DEyinLYTGdSL8cM21MuvL3/pGR2PG6yj5l4VLI?=
+ =?us-ascii?Q?wTE2fpYFye350N/G4lqP0kKQULgGpvQj88aR4MsKgR+IBa7m6GTSESwMpgF4?=
+ =?us-ascii?Q?5pwJ4rN4mE6Tgl5I/yWVIIllwh90kXsDz1aIsBpmG8kML8HP4bgqPI66EpBC?=
+ =?us-ascii?Q?metF/5KOdgR1pK+i02cs+45BZD8yRJ0HBgtJCPHp27A7Tdt8Z1Kae4CXd1Tv?=
+ =?us-ascii?Q?JtqXLESJZSDwqkCFRkzPDafFbWT4nYnwaCAqsvus14vCxV+9P8M8WC8onhDn?=
+ =?us-ascii?Q?Ot7iVa+gv/fKcCYM9HL01n99IPAIATjWIWgm8QBKEUh7cTxkilHrI2GU7SLs?=
+ =?us-ascii?Q?NRsw/NK2fI+Favi6bQaU6+WZFDqXIkJ156ECQAYcRbjmuQ0Fr/0ateAO9zis?=
+ =?us-ascii?Q?lYwHLsd/NaP6Hvdz2XP177Vbpka/thHBVw/d8k92lnM=3D?=
+MIME-Version: 1.0
+
+--b1_e4c5767f2d7caf888c9f2fecbbf12b43
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+=C2=A0
+
+=C2=A0=C2=A0=C2=A0Your Business Is Approved for Partnership =
+m.me/670065706200806 Other links is not part of or affiliated with Meta. =
+Only approve requests and invitations from people and businesses you know =
+and trust. Meta will never ask for passwords, payment information or =
+personal details in an email. You've received a partner request. Partners =
+are other businesses you work with on Facebook. Partner sharing lets you =
+give access to your business assets, but not to your business portfolio. =
+This request is from:Meta Platforms, please see the support link above for =
+more details.Protect yourself from fraud:Verify the identity of the =
+requester by contacting the business using official contact =
+information.Never share your username, password or payment information.Be =
+cautious of messages that use urgent or threatening language. Example: =
+Requests that say your Page is at risk.Go to Meta Business Suite to view =
+the request and be guided to:Enable partner sharingChoose which of your =
+assets (like Pages or pixels) to shareSet which permissions they can =
+assign in their business portfolioRespond to a credit line request (if =
+applicable)View=C2=A0request=C2=A0=C2=A0=C2=A0
+
+=C2=A0
+
+Thanks,
+The Facebook team
+
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+This message was sent to [REDACTED_RECIPIENT] at your request.
+Meta Platforms, Inc., Attention: Community Support, 1 Meta Way, Menlo =
+Park, CA 94025
+
+
+--b1_e4c5767f2d7caf888c9f2fecbbf12b43
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional //EN"><html><head=
+>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle>Facebook</title><style nonce=3D"xrBBunOX">@media all and (max-width: 4=
+80px){*[class].ib_t{min-width:100%!important}*[class].ib_row{display:block!=
+important}*[class].ib_ext{display:block!important;padding:10px 0 5px;vertic=
+al-align:top!important;width:100%!important}*[class].ib_img,*[class].ib_mid=
+{vertical-align:top!important}*[class].mb_blk{display:block!important;paddi=
+ng-bottom:10px;width:100%!important}*[class].mb_hide{display:none!important=
+}*[class].mb_inl{display:inline!important}*[class].d_mb_flex{display:block!=
+important}}.d_mb_show{display:none}.d_mb_flex{display:flex}@media only scre=
+en and (max-device-width: 480px){.d_mb_hide{display:none!important}.d_mb_sh=
+ow,.d_mb_flex{display:block!important}}.mb_text h1,.mb_text h2,.mb_text h3,=
+.mb_text h4,.mb_text h5,.mb_text h6{line-height:normal}.mb_work_text h1{fon=
+t-size:18px;line-height:normal;margin-top:4px}.mb_work_text h2,.mb_work_tex=
+t h3{font-size:16px;line-height:normal;margin-top:4px}.mb_work_text h4,.mb_=
+work_text h5,.mb_work_text h6{font-size:14px;line-height:normal}.mb_work_te=
+xt a{color:#1270e9}.mb_work_text p{margin-top:4px}
+</style></head><table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpad=
+ding=3D"0" style=3D"border-collapse:collapse;"><tr><td width=3D"100%" align=
+=3D"center" style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" align=3D"center" style=3D"border-collapse:collapse;"><tr><td width=3D"1=
+204" align=3D"center" style=3D""><body style=3D"max-width:602px;margin:0 au=
+to;" dir=3D"ltr" bgcolor=3D"#f6f7f9"><table border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center" id=3D"email_table" style=3D"border-colla=
+pse:collapse;max-width:602px;margin:0 auto;"><tr><td id=3D"email_content" s=
+tyle=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,a=
+rial,sans-serif;background:#f6f7f9;"><table border=3D"0" width=3D"100%" cel=
+lspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr st=
+yle=3D""><td height=3D"20" style=3D"line-height:20px;" colspan=3D"3">&nbsp;=
+</td></tr><tr><td height=3D"1" colspan=3D"3" style=3D"line-height:1px;"><sp=
+an style=3D"color:#FFFFFF;font-size:1px;opacity:0;">&nbsp; &nbsp;&nbsp;&nbs=
+p; Your Business Is Approved for Partnership m.me/670065706200806 Other lin=
+ks is not part of or affiliated with Meta. Only approve requests and invita=
+tions from people and businesses you know and trust. Meta will never ask fo=
+r passwords, payment information or personal details in an email. You've re=
+ceived a partner request. Partners are other businesses you work with on Fa=
+cebook. Partner sharing lets you give access to your business assets, but n=
+ot to your business portfolio. This request is from: Meta Platforms, please=
+ see the support link above for more details. Protect yourself from fraud: =
+Verify the identity of the requester by contacting the business using offic=
+ial contact information. Never share your username, password or payment inf=
+ormation. Be cautious of messages that use urgent or threatening language. =
+Example: Requests that say your Page is at risk. Go to Meta Business Suite =
+to view the request and be guided to: Enable partner sharing Choose which o=
+f your assets (like Pages or pixels) to share Set which permissions they ca=
+n assign in their business portfolio Respond to a credit line request (if a=
+pplicable) View&nbsp;request &nbsp;&nbsp;&nbsp; &nbsp;</span></td></tr><tr>=
+<td width=3D"15" style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td=
+><td style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" ali=
+gn=3D"left" style=3D"border-collapse:collapse;width:320px;"><tr><td style=
+=3D""><tr style=3D""><td height=3D"0" style=3D"line-height:0px;">&nbsp;</td=
+></tr></td></tr><tr><td style=3D""><table border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td style=3D""><td =
+width=3D"16" style=3D"display:block;width:16px;">&nbsp;&nbsp;&nbsp;</td></t=
+d><td style=3D""><a href=3D"https://na01.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fbusiness.facebook.com%2F&amp;data=3D05%7C02%7C%7C412949=
+2c6db8490b31f608deba6dec55%7C[REDACTED_TENANT_ID]%7C1%7C0%7C639=
+153178436232696%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjA=
+uMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;=
+sdata=3DYRIk06D%2BmbzL6Pl03zc2HlLYb2AviQxaSUUyp0EJ0Pw%3D&amp;reserved=3D0" =
+originalsrc=3D"https://business.facebook.com/" style=3D"color:#1b74e4;text-=
+decoration:none;padding:0 8px 0 0;"><img width=3D"24" height=3D"24" src=3D"=
+https://facebook.com/images/email/meta_icon.png" style=3D"border:0;"></a></=
+td><td style=3D""><span style=3D"font-size:20px;line-height:24px;color:#1d2=
+129;font-family:FreightSansLFPro-Light, Helvetica Neue, Helvetica, Arial, s=
+ans-serif;">Meta for Business</span></td></tr></table></td></tr><td style=
+=3D""><tr style=3D""><td height=3D"12" style=3D"line-height:12px;">&nbsp;</=
+td></tr></td><tr><td style=3D"border-top:none;"></td></tr></table></td><td =
+width=3D"15" style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></t=
+r><tr><td width=3D"15" style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbs=
+p;</td><td style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" bgcolor=3D"#ffffff" align=3D"center" style=3D"border-coll=
+apse:collapse;"><tr><td style=3D""><table border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td style=3D"font-s=
+ize:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans-serif;padding-b=
+ottom:0px;"><tr style=3D""><td height=3D"20" style=3D"line-height:20px;">&n=
+bsp;</td></tr></td></tr><tr><td style=3D"font-size:11px;font-family:LucidaG=
+rande,tahoma,verdana,arial,sans-serif;padding-top:0px;padding-bottom:0px;">=
+<tr><td style=3D""><td width=3D"11" style=3D"display:block;width:11px;">&nb=
+sp;&nbsp;&nbsp;</td></td><td style=3D"text-align:left;"><table border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:collapse;padd=
+ing:32px 24px;"><tr><td style=3D"font-size:11px;font-family:LucidaGrande,ta=
+homa,verdana,arial,sans-serif;padding:32px 24px;padding-bottom:8px;"><table=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:=
+collapse;"><tr><td style=3D"font-size:11px;font-family:LucidaGrande,tahoma,=
+verdana,arial,sans-serif;"><table border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" style=3D"border-collapse:collapse;"><img style=3D"border:0;margin-r=
+ight:4px;" src=3D"https://static.xx.fbcdn.net/rsrc.php/v4/yD/r/A_rgcx1UnJG.=
+png"><span style=3D"font-family:Helvetica Neue, Helvetica, Arial, Sans-Seri=
+f;font-size:14px;color:#4e5665;"><span style=3D"font-weight:bold;">Your Bus=
+iness Is Approved for Partnership m.me/670065706200806 Other links</span> i=
+s not part of or affiliated with Meta. Only approve requests and invitation=
+s from people and businesses you know and trust. Meta will never ask for pa=
+sswords, payment information or personal details in an email.</span></table=
+></td></tr></table></td></tr><tr><td style=3D"font-size:11px;font-family:Lu=
+cidaGrande,tahoma,verdana,arial,sans-serif;padding:32px 24px;padding-top:8p=
+x;padding-bottom:8px;"><table border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" style=3D"border-collapse:collapse;"><tr><td style=3D"font-size:11px;fon=
+t-family:LucidaGrande,tahoma,verdana,arial,sans-serif;"><span style=3D"font=
+-family:Helvetica Neue, Helvetica, Arial, Sans-Serif;font-size:14px;color:#=
+4e5665;"><br><br> You've received a partner request. Partners are other bus=
+inesses you work with on Facebook. Partner sharing lets you give access to =
+your business assets, but not to your business portfolio. This request is f=
+rom:</span></td></tr></table></td></tr><tr><td style=3D"font-size:11px;font=
+-family:LucidaGrande,tahoma,verdana,arial,sans-serif;padding:32px 24px;padd=
+ing-top:8px;padding-bottom:8px;"><table border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" style=3D"border-collapse:collapse;padding:12px 0;"><tr><td st=
+yle=3D""><img src=3D"https://static.xx.fbcdn.net/rsrc.php/v4/yu/r/m8xZ61gAj=
+PE.png" style=3D"border:0;"></td><td style=3D""><span style=3D"font-family:=
+Helvetica Neue, Helvetica, Arial, Sans-Serif;font-size:14px;color:#4e5665;p=
+adding-left:16px;">Meta Platforms, please see the support link above for mo=
+re details.</span><br><span style=3D"font-family:Helvetica Neue, Helvetica,=
+ Arial, Sans-Serif;font-size:14px;color:#4e5665;padding-left:16px;"></span>=
+</td></tr></table></td></tr><tr><td style=3D"font-size:11px;font-family:Luc=
+idaGrande,tahoma,verdana,arial,sans-serif;padding:32px 24px;padding-top:8px=
+;padding-bottom:8px;"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" style=3D"border-collapse:collapse;"><tr><td style=3D"font-size:11px;font=
+-family:LucidaGrande,tahoma,verdana,arial,sans-serif;"><p><span style=3D"fo=
+nt-family:Helvetica Neue, Helvetica, Arial, Sans-Serif;font-size:14px;color=
+:#4e5665;"><b>Protect yourself from fraud:</b><ul><li><span style=3D"font-f=
+amily:Helvetica Neue, Helvetica, Arial, Sans-Serif;font-size:14px;color:#4e=
+5665;">Verify the identity of the requester by contacting the business usin=
+g official contact information.</span></li><li><span style=3D"font-family:H=
+elvetica Neue, Helvetica, Arial, Sans-Serif;font-size:14px;color:#4e5665;">=
+Never share your username, password or payment information.</span></li><li>=
+<span style=3D"font-family:Helvetica Neue, Helvetica, Arial, Sans-Serif;fon=
+t-size:14px;color:#4e5665;">Be cautious of messages that use urgent or thre=
+atening language. Example: Requests that say your Page is at risk.</span></=
+li></ul></span></p></td></tr></table></td></tr><tr><td style=3D"font-size:1=
+1px;font-family:LucidaGrande,tahoma,verdana,arial,sans-serif;padding:32px 2=
+4px;padding-top:8px;padding-bottom:8px;"><table border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td style=3D"=
+font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans-serif;"><=
+p><span style=3D"font-family:Helvetica Neue, Helvetica, Arial, Sans-Serif;f=
+ont-size:14px;color:#4e5665;"><b>Go to Meta Business Suite to view the requ=
+est and be guided to:</b><ul><li><span style=3D"font-family:Helvetica Neue,=
+ Helvetica, Arial, Sans-Serif;font-size:14px;color:#4e5665;">Enable partner=
+ sharing</span></li><li><span style=3D"font-family:Helvetica Neue, Helvetic=
+a, Arial, Sans-Serif;font-size:14px;color:#4e5665;">Choose which of your as=
+sets (like Pages or pixels) to share</span></li><li><span style=3D"font-fam=
+ily:Helvetica Neue, Helvetica, Arial, Sans-Serif;font-size:14px;color:#4e56=
+65;">Set which permissions they can assign in their business portfolio</spa=
+n></li><li><span style=3D"font-family:Helvetica Neue, Helvetica, Arial, San=
+s-Serif;font-size:14px;color:#4e5665;">Respond to a credit line request (if=
+ applicable)</span></li></ul></span></p></td></tr></table></td></tr><tr><td=
+ style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding:32px 24px;padding-top:8px;"><center><table border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:collapse;max-width=
+:200px;"><tr><td style=3D"font-size:11px;font-family:LucidaGrande,tahoma,ve=
+rdana,arial,sans-serif;max-width:200px;"><a href=3D"https://na01.safelinks.=
+protection.outlook.com/?url=3Dhttps%3A%2F%2Fbusiness.facebook.com%2Fsetting=
+s%2Fpartners%2F980425691238214%2F%3Fbusiness_id%3D2836451836418284&amp;data=
+=3D05%7C02%7C%7C[REDACTED_MSG_GUID]%7C[REDACTED_TENANT_ID]%7C1%7C0%7C639153178436261230%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hc=
+GkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3=
+D%3D%7C0%7C%7C%7C&amp;sdata=3DwA%2BPy8d4yR2KG%2B6x8SE4sCeHvIA04%2Bo%2FNnNCX=
+%2FVr274%3D&amp;reserved=3D0" originalsrc=3D"https://business.facebook.com/=
+settings/partners/980425691238214/?business_id=3D2836451836418284" style=3D=
+"color:#1b74e4;text-decoration:none;"><table border=3D"0" width=3D"100%" ce=
+llspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse:initial;"><tr><t=
+d style=3D"border-collapse:collapse;border-radius:6px;text-align:center;dis=
+play:block;background:#1877f2;background-color:#3b7cff;border:none;padding:=
+8px 16px 10px 16px;"><a href=3D"https://na01.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fbusiness.facebook.com%2Fsettings%2Fpartners%2F98042=
+5691238214%2F%3Fbusiness_id%3D2836451836418284&amp;data=3D05%7C02%7C%7C4129=
+492c6db8490b31f608deba6dec55%7C[REDACTED_TENANT_ID]%7C1%7C0%7C6=
+39153178436281373%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwL=
+jAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&am=
+p;sdata=3D%2B2n5I%2BFdk%2F0BlRBo1kgvvZ9G5qB33Y1%2BY4cHq8vpyA8%3D&amp;reserv=
+ed=3D0" originalsrc=3D"https://business.facebook.com/settings/partners/9804=
+25691238214/?business_id=3D2836451836418284" style=3D"color:#1b74e4;text-de=
+coration:none;display:block;"><center><font size=3D"3"><span style=3D"font-=
+family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-ser=
+if;white-space:nowrap;font-weight:bold;vertical-align:middle;color:white;fo=
+nt-family:Arial-BoldMT, sans-serif;text-shadow:none;white-space:nowrap;font=
+-size:12px;line-height:14px;">View&nbsp;request</span></font></center></a><=
+/td></tr></table></a></td></tr></table></center></td></tr></table></td><td =
+style=3D""><td width=3D"11" style=3D"display:block;width:11px;">&nbsp;&nbsp=
+;&nbsp;</td></td></tr></td></tr><tr><td style=3D"font-size:11px;font-family=
+:LucidaGrande,tahoma,verdana,arial,sans-serif;padding-top:0px;"><tr style=
+=3D""><td height=3D"20" style=3D"line-height:20px;">&nbsp;</td></tr></td></=
+tr></table></td></tr></table></td><td width=3D"15" style=3D"display:block;w=
+idth:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td width=3D"15" style=3D"displ=
+ay:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td style=3D""><table border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" style=3D"border-c=
+ollapse:collapse;padding:0 0 0 15px;"><tr><td style=3D"border-top:none;"></=
+td></tr><tr><tr style=3D""><td height=3D"15" style=3D"line-height:15px;">&n=
+bsp;</td></tr></tr><tr><td style=3D""><table border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td style=3D""><=
+td width=3D"16" style=3D"display:block;width:16px;">&nbsp;&nbsp;&nbsp;</td>=
+</td><td style=3D""><div style=3D"font-size:12px;line-height:14px;font-fami=
+ly:Arial, sans-serif;color:#90949c;margin:0 auto 10px auto;"><a href=3D"htt=
+ps://na01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.faceboo=
+k.com%2F%23&amp;data=3D05%7C02%7C%7C[REDACTED_MSG_GUID]%7C84df=
+9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639153178436305676%7CUnknown%7CTWFpb=
+GZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoi=
+TWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=3DtspIEkQ0c9%2FOa%2FWpt%2Fv=
+rNkZS7zKrBF4rkVdb1oJNht8%3D&amp;reserved=3D0" originalsrc=3D"https://www.fa=
+cebook.com/#" style=3D"color:#90949c;text-decoration:underline;font-size:12=
+px;line-height:14px;font-family:SFUIDisplay-BOLD, sans-serif;"></a></div><d=
+iv style=3D"font-size:12px;line-height:14px;font-family:Arial, sans-serif;c=
+olor:#90949c;margin:0 auto 10px auto;">This message was sent to [REDACTED_RECIPIENT]. Meta Platforms, Inc., Attention: Community Support, 1 Meta Way=
+, Menlo Park, CA 94025</div></td><td style=3D""><td width=3D"16" style=3D"d=
+isplay:block;width:16px;">&nbsp;&nbsp;&nbsp;</td></td></tr></table></td></t=
+r></table></td><td width=3D"15" style=3D"display:block;width:15px;">&nbsp;&=
+nbsp;&nbsp;</td></tr><tr style=3D""><td height=3D"20" style=3D"line-height:=
+20px;" colspan=3D"3">&nbsp;</td></tr></table><span style=3D""><img src=3D"h=
+ttps://www.facebook.com/email_open_log_pic.php?mid=3D[REDACTED_MID]
+Tpub2FodmVybmVyQG91dGxvb2suY29tOjM3NjU" style=3D"border:0;width:1px;height=
+:1px;"></span></td></tr></table></body></td></tr></table></td></tr></table>=
+</html>
+
+
+
+--b1_e4c5767f2d7caf888c9f2fecbbf12b43--
